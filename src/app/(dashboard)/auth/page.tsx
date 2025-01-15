@@ -91,6 +91,8 @@ const Auth = () => {
                   placeholder="Tyler Durden"
                   type="text"
                   value={name}
+                  pattern="[a-zA-Z\s]+"
+                  title="Name must only contain letters."
                   onChange={(e) => setName(e.target.value)}
                   className="text-black"
                 />
